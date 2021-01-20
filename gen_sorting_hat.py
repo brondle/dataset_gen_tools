@@ -46,8 +46,8 @@ def clean_and_sub(outfile, infile):
         #if 0 not in new_row:
         writer.writerow(new_row)
 
-with open('out_test.csv', 'w') as outfile:
-    with open('sorting_hat.csv', 'r') as infile:
+with open('outfile.csv', 'w') as outfile:
+    with open('infile.json', 'r') as infile:
         clean_and_sub(outfile, infile)
         # questions can be in any order
         # need to order the questions
